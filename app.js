@@ -25,10 +25,8 @@ mongoose.connect("mongodb+srv://maidabhatti77:gRx8NWL9XefK5TZS@calmdata.kjxbc1a.
   useUnifiedTopology: true,
 })
   .then(() => console.log('MongoDB connected'))
-  .catch(err => {
-    console.error('MongoDB connection error:', err);
-    process.exit(1);  // Exit process with failure code
-  });
+  .catch(err => console.log(err));
+
 
 // Routes
 app.use('/api/users', userRoutes);
