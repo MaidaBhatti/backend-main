@@ -26,8 +26,6 @@ mongoose.connect("mongodb+srv://maidabhatti77:gRx8NWL9XefK5TZS@calmdata.kjxbc1a.
 })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
-
-
 // Routes
 app.use('/api/users', userRoutes);
 app.use('/api/posts', postsRoute);
